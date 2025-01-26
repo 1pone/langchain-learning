@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom", "deno.unstable"],
+    "strict": true
+  },
+  "tasks": {
+    "start": "deno run -A src/index.ts",
+    "lint": "deno lint --fix"
+  },
+  "unstable": ["sloppy-imports"],
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+    }
+  },
+  "nodeModulesDir": "auto"
+}
