@@ -5,11 +5,11 @@ import { LanguageModelLike } from "@langchain/core/dist/language_models/base";
 const model = new ChatOpenAI(
   {
     model: "gpt-4o-mini",
-    temperature: 0.9,
+    temperature: 0,
     verbose: false,
   },
   {
-    baseURL: "https://api.chatanywhere.tech",
+    baseURL: "https://api.chatanywhere.tech/v1",
   },
 ) as LanguageModelLike;
 
